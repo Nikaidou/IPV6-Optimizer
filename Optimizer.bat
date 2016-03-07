@@ -1,69 +1,69 @@
 @echo off&setlocal enabledelayedexpansion
 MODE con: COLS=50 lines=7
-TITLE V140518 By Õæºì½´
+TITLE V140518 By çœŸçº¢é…±
 set schoolipv6=2001:da8:6005
 cls
 color ce
-echo WIN7ÇëÓÒ¼üÒÔ¹ÜÀíÔ±Éí·ÝÔËÐÐ
+echo WIN7è¯·å³é”®ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œ
 echo.
-echo È·±£±êÌâÀ¸×óÉÏ½ÇÓÐ¹ÜÀíÔ±×ÖÑù
+echo ç¡®ä¿æ ‡é¢˜æ å·¦ä¸Šè§’æœ‰ç®¡ç†å‘˜å­—æ ·
 echo.
 pause
 
-TITLE ½Å±¾°²×°Ê¹ÓÃËµÃ÷
+TITLE è„šæœ¬å®‰è£…ä½¿ç”¨è¯´æ˜Ž
 cls
 
-rem °æÈ¨ËµÃ÷½ûÖ¹ÐÞ¸Ä
-echo =========¹ØÓÚ°æÈ¨=========
-echo ¸Ã½Å±¾¹éÎ÷ÄÏ½»Í¨´óÑ§Õæºì½´ËùÓÐ
-echo ÈÎºÎÈË¿ÉÒÔÒÔÈÎºÎÐÎÊ½´«²¥ÐÞ¸Ä
+rem ç‰ˆæƒè¯´æ˜Žç¦æ­¢ä¿®æ”¹
+echo =========å…³äºŽç‰ˆæƒ=========
+echo è¯¥è„šæœ¬å½’è¥¿å—äº¤é€šå¤§å­¦çœŸçº¢é…±æ‰€æœ‰
+echo ä»»ä½•äººå¯ä»¥ä»¥ä»»ä½•å½¢å¼ä¼ æ’­ä¿®æ”¹
 pause
 
 cls
-echo =========¹ØÓÚ°²×°=========
-echo ÈôIPV4µØÖ·¿ªÍ·Îª192.168£¬Çë¼ì²éÊÇ·ñÊ¹ÓÃÂ·ÓÉÆ÷
-echo Ê¹ÓÃÂ·ÓÉÆ÷¿ÉÄÜµ¼ÖÂÎÞ·¨Á¬½ÓIPV6
-echo Â·ÓÉÆ÷²»Ê¹ÓÃWAN¶Ë¿Ú¼´¿Éµ±×ö¼¯ÏßÆ÷Ê¹ÓÃ
+echo =========å…³äºŽå®‰è£…=========
+echo è‹¥IPV4åœ°å€å¼€å¤´ä¸º192.168ï¼Œè¯·æ£€æŸ¥æ˜¯å¦ä½¿ç”¨è·¯ç”±å™¨
+echo ä½¿ç”¨è·¯ç”±å™¨å¯èƒ½å¯¼è‡´æ— æ³•è¿žæŽ¥IPV6
+echo è·¯ç”±å™¨ä¸ä½¿ç”¨WANç«¯å£å³å¯å½“åšé›†çº¿å™¨ä½¿ç”¨
 pause
 
 cls
-echo =========°²×°×¢Òâ=========
-echo Ê¹ÓÃ´¿IPV6»·¾³Çë²»Òª°²×°ËíµÀ
-echo ËíµÀ»á×ßIPV4ÏßÂ·(Á÷Á¿)
+echo =========å®‰è£…æ³¨æ„=========
+echo ä½¿ç”¨çº¯IPV6çŽ¯å¢ƒè¯·ä¸è¦å®‰è£…éš§é“
+echo éš§é“ä¼šèµ°IPV4çº¿è·¯(æµé‡)
 pause
 
 :begin
 CLS
 color 07
-TITLE IPV6°²×°Ð¶ÔØ
-@echo [1] IPV6°²×°
-@echo [9] IPV6Ð¶ÔØ
+TITLE IPV6å®‰è£…å¸è½½
+@echo [1] IPV6å®‰è£…
+@echo [9] IPV6å¸è½½
 
 
 set var=0
-set /p var=ÇëÑ¡Ôñ¶ÔÓ¦ÐòºÅ[?] 
+set /p var=è¯·é€‰æ‹©å¯¹åº”åºå·[?] 
 if "%var%" == "9" goto uninstall
 
 :install
 
 
 cls
-echo Çë°´¹´Ñ¡±¾µØÁ¬½ÓÖÐIPV6Ð­Òé
-echo ²¢ÇÒIPV4ÓëIPV6Ð­ÒéÊôÐÔÇëÑ¡Ôñ×Ô¶¯»ñÈ¡IPµØÖ·
+echo è¯·æŒ‰å‹¾é€‰æœ¬åœ°è¿žæŽ¥ä¸­IPV6åè®®
+echo å¹¶ä¸”IPV4ä¸ŽIPV6åè®®å±žæ€§è¯·é€‰æ‹©è‡ªåŠ¨èŽ·å–IPåœ°å€
 echo.
 control netconnections
 pause
 
 
 
-title ÕýÔÚÓÅ»¯ÍøÂç
-echo ÇëÄÍÐÄµÈ´ý,¿ÉÄÜÐÞÒªÈô¸É·ÖÖÓ
-echo Çë²»ÓÃÔÚÒâÈÎºÎ´íÎóÌáÊ¾
-echo ³¤Ê±¼äÎÞ·´Ó¦ÇëÖØÐÂÔËÐÐ½Å±¾
+title æ­£åœ¨ä¼˜åŒ–ç½‘ç»œ
+echo è¯·è€å¿ƒç­‰å¾…,å¯èƒ½ä¿®è¦è‹¥å¹²åˆ†é’Ÿ
+echo è¯·ä¸ç”¨åœ¨æ„ä»»ä½•é”™è¯¯æç¤º
+echo é•¿æ—¶é—´æ— ååº”è¯·é‡æ–°è¿è¡Œè„šæœ¬
 ipv6 install >nul
 cls
-echo ÇëÄÍÐÄµÈ´ý,¿ÉÄÜÐÞÒªÈô¸É·ÖÖÓ
-echo Çë²»ÓÃÔÚÒâÈÎºÎ´íÎóÌáÊ¾
+echo è¯·è€å¿ƒç­‰å¾…,å¯èƒ½ä¿®è¦è‹¥å¹²åˆ†é’Ÿ
+echo è¯·ä¸ç”¨åœ¨æ„ä»»ä½•é”™è¯¯æç¤º
 ipconfig/flushdns >nul
 ipconfig/registerdns >nul
 netsh interface ipv6 6to4 set relay disable >nul
@@ -80,17 +80,17 @@ sc config 6to4 start= auto >nul
 net start 6to4 >nul
 ROUTE DELETE ::/0 >nul
 
-netsh interface ipv6 set interface "±¾µØÁ¬½Ó" routerdiscovery=enabled >nul
-netsh interface ipv6 set interface "±¾µØÁ¬½Ó" advertise=disabled >nul
-Netsh interface ipv6 add dns "±¾µØÁ¬½Ó" 2001:470:20::2 index=3 >nul
-Netsh interface ipv6 add dns "±¾µØÁ¬½Ó" 2001:4860:4860::8888 index=1 >nul
-Netsh interface ipv6 add dns "±¾µØÁ¬½Ó" 2001:4860:4860::8844 index=2 >nul
+netsh interface ipv6 set interface "æœ¬åœ°è¿žæŽ¥" routerdiscovery=enabled >nul
+netsh interface ipv6 set interface "æœ¬åœ°è¿žæŽ¥" advertise=disabled >nul
+Netsh interface ipv6 add dns "æœ¬åœ°è¿žæŽ¥" 2001:470:20::2 index=3 >nul
+Netsh interface ipv6 add dns "æœ¬åœ°è¿žæŽ¥" 2001:4860:4860::8888 index=1 >nul
+Netsh interface ipv6 add dns "æœ¬åœ°è¿žæŽ¥" 2001:4860:4860::8844 index=2 >nul
 
-netsh interface ipv6 set interface "ÎÞÏßÍøÂçÁ¬½Ó" routerdiscovery=enabled >nul
-netsh interface ipv6 set interface "ÎÞÏßÍøÂçÁ¬½Ó" advertise=disabled >nul
-Netsh interface ipv6 add dns "ÎÞÏßÍøÂçÁ¬½Ó" 2001:470:20::2 index=3 >nul
-Netsh interface ipv6 add dns "ÎÞÏßÍøÂçÁ¬½Ó" 2001:4860:4860::8888 index=1 >nul
-Netsh interface ipv6 add dns "ÎÞÏßÍøÂçÁ¬½Ó" 2001:4860:4860::8844 index=2 >nul
+netsh interface ipv6 set interface "æ— çº¿ç½‘ç»œè¿žæŽ¥" routerdiscovery=enabled >nul
+netsh interface ipv6 set interface "æ— çº¿ç½‘ç»œè¿žæŽ¥" advertise=disabled >nul
+Netsh interface ipv6 add dns "æ— çº¿ç½‘ç»œè¿žæŽ¥" 2001:470:20::2 index=3 >nul
+Netsh interface ipv6 add dns "æ— çº¿ç½‘ç»œè¿žæŽ¥" 2001:4860:4860::8888 index=1 >nul
+Netsh interface ipv6 add dns "æ— çº¿ç½‘ç»œè¿žæŽ¥" 2001:4860:4860::8844 index=2 >nul
 
 netsh interface ipv6 set interface "Wi-Fi" routerdiscovery=enabled >nul
 netsh interface ipv6 set interface "Wi-Fi" advertise=disabled >nul
@@ -128,16 +128,16 @@ ipconfig | find /I "%schoolipv6%" >nul
 if  %ERRORLEVEL% == 0	color 2e
 cls
 for /f "tokens=16*" %%1 in ('ipconfig ^| find /I "%schoolipv6%"') do (echo %%1 ) 
-echo ÓÅ»¯ÍøÂçÍê±Ï
-echo ÂÌÉ«´ú±íIPV6¿ÉÓÃ
+echo ä¼˜åŒ–ç½‘ç»œå®Œæ¯•
+echo ç»¿è‰²ä»£è¡¨IPV6å¯ç”¨
 echo.
 echo.
 pause
 cls
-echo µã»÷²é¿´,¹´Ñ¡ÏÔÊ¾Òþ²ØÉè±¸
-echo É¾³ýÍøÂçÊÊÅäÆ÷ÖÐµÄËùÓÐËíµÀÊÊÅäÆ÷
-echo ¹Ø¼ü´Ê ISATAP,6TO4,Teredo,Tun
-echo °´ÈÎÒâ¼ü½áÊø°²×°
+echo ç‚¹å‡»æŸ¥çœ‹,å‹¾é€‰æ˜¾ç¤ºéšè—è®¾å¤‡
+echo åˆ é™¤ç½‘ç»œé€‚é…å™¨ä¸­çš„æ‰€æœ‰éš§é“é€‚é…å™¨
+echo å…³é”®è¯ ISATAP,6TO4,Teredo,Tun
+echo æŒ‰ä»»æ„é”®ç»“æŸå®‰è£…
 echo.
 prompt $p$g
 set devmgr_show_nonpresent_devices=1
@@ -148,9 +148,9 @@ exit
 
 :uninstall
 
-title ÕýÔÚÐ¶ÔØÐ­IPV6Òé 
+title æ­£åœ¨å¸è½½åIPV6è®® 
 cls
-echo ÇëÄÍÐÄµÈ´ý,¿ÉÄÜÐÞÒªÈô¸É·ÖÖÓ
+echo è¯·è€å¿ƒç­‰å¾…,å¯èƒ½ä¿®è¦è‹¥å¹²åˆ†é’Ÿ
 ::ipv6 uninstall >nul
 netsh interface ipv6 6to4 set state default default >nul
 netsh interface ipv6 6to4 set routing default default >nul
@@ -161,10 +161,10 @@ netsh interface ipv6 isatap set state default >nul
 netsh interface ipv6 isatap set router default >nul
 netsh interface ipv6 set privacy state=enabled >nul
 netsh interface ipv6 set teredo default >nul
-netsh interface ipv6 set interface "±¾µØÁ¬½Ó" advertise=enabled >nul
+netsh interface ipv6 set interface "æœ¬åœ°è¿žæŽ¥" advertise=enabled >nul
 netsh interface ipv6 reset >nul
 cls
 color 2e
-echo IPV6Ð­ÒéÐ¶ÔØÍê±Ï,ÇëÖØÆô¼ÆËã»ú
+echo IPV6åè®®å¸è½½å®Œæ¯•,è¯·é‡å¯è®¡ç®—æœº
 pause
 exit
